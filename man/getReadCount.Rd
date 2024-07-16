@@ -16,10 +16,11 @@ parameters) are shown.
                      chr=paste("chr",c(1:22, "X", "Y"), sep=""), 
                      plotResults=TRUE, plotFile="", fileFormat="pdf", 
                      mar=c(5.1, 4.1, 4.1, 2.1),
-                     lwdhLine=1.5, main="", vLineBool=TRUE, 
+                     lwdhLine=1.5, vLineBool=TRUE, 
                      colvLine="lightgrey", lwdvLine= 1.5,
                      ltyvLine=2, col="black", pch=1, 
-                     outlierPch=c(2,6), outlierCol="red", cex=1, ...)
+                     outlierPch=c(2,6), outlierCol="red", cex=1, 
+                     xlab="", ylab="Fragment count", main="", ...)
 }
 \arguments{
 \item{bamFiles}{ 
@@ -54,9 +55,6 @@ vector elements can be defined to be used in the plot.
 \item{lwdhLine}{
   The width of the horizontal line (1 by deault).
 }
-\item{main}{
-  The main comment. It is omitted by deault.
-}
 \item{vLineBool}{
   Whether draw the vertical lines that are helpful for tracing the result for
   each sample (TRUE by default).
@@ -87,6 +85,15 @@ vector elements can be defined to be used in the plot.
 }
 \item{cex}{
   The size of the points (1 black by default).
+}
+\item{xlab}{
+  X axis label.
+}
+\item{ylab}{
+  Y axis label.
+}
+\item{main}{
+  The main title. It is omitted by deault.
 }
 \item{...}{
   Further parameters of \code{\link[grDevices]{pdf}} and 

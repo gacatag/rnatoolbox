@@ -1,6 +1,6 @@
 Package: rnatoolbox
 Title: What the Package Does (One Line, Title Case)
-Version: 0.1.0
+Version: 0.1.1
 Author: Ali Oghabian <Ali.Oghabian@Helsinki.Fi>
 Maintainer: Ali Oghabian <Ali.Oghabian@Helsinki.Fi>
 Description: A selection of useful tools for analyzing RNAseq data.

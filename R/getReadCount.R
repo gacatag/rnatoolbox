@@ -2,10 +2,12 @@ getReadCount<- function(bamFiles, sampleNames=c(),
                      chr=paste("chr",c(1:22, "X", "Y"), sep=""), 
                      plotResults=TRUE, plotFile="", fileFormat="pdf", 
                      mar=c(5.1, 4.1, 4.1, 2.1),
-                     lwdhLine=1.5, main="", vLineBool=TRUE, 
+                     lwdhLine=1.5, vLineBool=TRUE, 
                      colvLine="lightgrey", lwdvLine= 1.5,
                      ltyvLine=2, col="black", pch=1, 
-                     outlierPch=c(2,6), outlierCol="red", cex=1, ...){
+                     outlierPch=c(2,6), outlierCol="red", cex=1, 
+                     xlab="", ylab="Fragment count",
+                     main="", ...){
   
   if(length(names(bamFiles))==0&length(sampleNames)!=0 & plotResults){
     names(bamFiles)<- sampleNames
@@ -30,8 +32,8 @@ getReadCount<- function(bamFiles, sampleNames=c(),
     png(plotFile, ...)
   par(mar=mar)
  
-  plot(1:length(countAll), countAll, pch=1.5, xaxt='n', xlab="", main=main, 
-       col=NA)
+  plot(1:length(countAll), countAll, pch=1.5, xaxt='n', xlab=xlab, ylab=ylab,
+       main=main, col=NA)
   boxVal<- boxplot.stats(countAll)$stats
   colhLine= "grey"
   abline(h=boxVal[3], col=colhLine, lwd=4)

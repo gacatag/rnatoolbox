@@ -2,9 +2,10 @@ getGender<- function(bamFiles, sampleNames=c(), numChr="chrY",
                      denumChr="chrX",
                      plotResults=TRUE, plotFile="", fileFormat="pdf", 
                      mar=c(5.1, 4.1, 4.1, 2.1), hLine=c(), colhLine="red", 
-                     lwdhLine=1.5, main="", vLineBool=TRUE, 
+                     lwdhLine=1.5, vLineBool=TRUE, 
                      colvLine="lightgrey", lwdvLine= 1.5,
-                     ltyvLine=2, col="black", pch=1, cex=1, ...){
+                     ltyvLine=2, col="black", pch=1, cex=1, 
+                     xlab="", ylab="Fragment count", main="", ...){
   
   if(length(names(bamFiles))==0&length(sampleNames)!=0 & plotResults){
     names(bamFiles)<- sampleNames
