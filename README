@@ -1,0 +1,9 @@
+rnatoolbox
+
+The R package includes tools for quality assessment and analyzing RNAseq data developed by Ali Oghabian.
+ 
+
+To install the package from Github you can use the following script in R:
+
+library(devtools)
+install_github("gacatag/rnatoolbox")
