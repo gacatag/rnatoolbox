@@ -1,0 +1,4 @@
+export(getGender, getReadCount, groupScatterPlot)
+importFrom(derfinder, getTotalMapped)
+importFrom("grDevices", "boxplot.stats", "dev.off", "pdf", "png")
+importFrom("graphics", "abline", "axis", "lines", "par", "points")

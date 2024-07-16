@@ -1,0 +1,12 @@
+Package: rnatoolbox
+Title: What the Package Does (One Line, Title Case)
+Version: 0.1.0
+Author: Ali Oghabian <Ali.Oghabian@Helsinki.Fi>
+Maintainer: Ali Oghabian <Ali.Oghabian@Helsinki.Fi>
+Description: A selection of useful tools for analyzing RNAseq data.
+Depends: R (>= 3.5.0)
+Imports: derfinder
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.0
