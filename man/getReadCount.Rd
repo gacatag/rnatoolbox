@@ -106,7 +106,7 @@ chromosomes.
 }
 
 \seealso{
-	\code{\link{getGender}}
+	\code{\link{classifySex}}
 }
 
 \author{Ali Oghabian}
